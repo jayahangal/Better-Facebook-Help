@@ -1,0 +1,158 @@
+<!doctype html>
+<head>
+<title>Better Facebook Help</title>
+<link type="text/css" rel="stylesheet" href="fbhelp_style.css" />
+<script src="jquery-1.4.2.js"></script>
+<script src="jquery.fbhelp.js"></script>
+<script type="text/javascript">
+
+var selected_link;
+
+function limeLightTerm(e) {
+    var url = $(".items").limelight(
+	{
+	    width: 80,
+	    height: 70
+    	});
+     if (url) {
+	console.log("url:" + url);
+     }
+     console.log("selected link:" + selected_link);
+
+   var key;
+   if (window.event) {
+       key = event.keyCode;
+    } else {
+       key = e.which;
+    }
+  if (key == '13') {
+         document.location.href = selected_link;
+  }
+
+}
+
+</script>
+</head>
+<body>
+<div id='content'>
+<h1 id='header'> Facebook Settings Help </h1>
+<div id='description'>
+Type in any word related to Facebook settings in the search box and you will be automatically taken
+to the Facebook page where you can edit the settings.<p>
+This way you can quickly access the setting that is otherwise hidden somewhere under either "Account Settings" or "Privacy Settings". 
+</div>
+<div class='searcharea'>
+<div class='searchbox'>
+Search: <input type="text" id="search" name="term" onkeyup="limeLightTerm(event)"/><img style="margin:0px;vertical-align=middle;" height="20px" width="20px" src="arrow.png" />
+</div>
+</div>
+
+<div class='itemsarea'>
+<div class='itemsline'>
+<div class='itemtitle'> Personal </div>
+<div class='items'>
+<a href='https://www.facebook.com/settings?tab=account'><img src="general.png"><div id='tab'>General</div></a>
+<div class='keywords'>
+username, password, Network, Linked Accounts, Download
+</div>
+</div>
+
+<div class='items'>
+<a href="http://www.facebook.com/editprofile.php"><img src="basic.png"><div id='tab'> Basic Information</div></a>
+<div class='keywords'>
+basic, information, city, hometown, gender, birthday, interested, in, langauges, about, me
+</div>
+</div>
+
+<div class='items'>
+<a href="http://www.facebook.com/editprofile.php"><img src="profile.png"><div id='tab'> Profile Picture</div></a>
+<div class='keywords'>
+profile, picture
+</div>
+</div>
+
+<div class='items'>
+<a href="http://www.facebook.com/editprofile.php?sk=relationships"><img src="family.png"><div id='tab'>Friends and Family</div></a>
+<div class='keywords'>
+family, friends, relationship, wife, husband, girl friend, boy friend, children, cousin, father, mother, brother, sister, sibling, anniversary
+</div>
+</div>
+
+<div class='items'><a href=http://www.facebook.com/editprofile.php?sk=eduwork"><img src="edu.png"><div id='tab'>Education and Work</div></a>
+<div class='keywords'>
+eductation, employer, college, university, high school, class
+</div>
+</div>
+
+<div class='items'><a href="http://www.facebook.com/editprofile.php?sk=contact"><img src="contact.png"><div id='tab'>Contact Information</div></a>
+<div class='keywords'>
+IM, im, chat, phone, mobile, address, website
+</div>
+</div>
+
+</div>
+
+<div class='itemsline'>
+<div class='itemtitle'>Privacy and Security</div>
+
+<div class='items'>
+<a href='https://www.facebook.com/settings?tab=privacy'><img src="privacy.png"><div id='tab'>Privacy</div></a>
+<div class='keywords'>
+privacy, tags, friend, requests, messages, contact, lookup, check, apps, games, websites, search, restrict, block, invites, event 
+</div>
+</div>
+
+
+<div class='items'>
+<a href='https://www.facebook.com/settings?tab=security'><img src="security.png"><div id='tab'>Security</div></a>
+<div class='keywords'>
+Secure, Browsing, ssl, https, login, notifications, approvals, devices, sessions
+</div>
+</div>
+
+</div>
+
+<div class='itemsline'>
+<div class='itemtitle'>Miscelleneous</div>
+<div class='items'>
+<a href="http://www.facebook.com/settings?tab=notifications"><img src="notifications.png"><div id='tab'>Notifications</div></a>
+<div class='keywords'>
+facebook, photos, groups, pages, events, questions, notes, links, video, center, wall, places, deals, updates, credits 
+</div>
+</div>
+
+<div class='items'>
+<a href="http://www.facebook.com/settings?tab=applications"><img src="apps.png"><div id='tab'> Apps</div></a>
+<div class='keywords'>
+apps, applications
+</div>
+</div>
+
+<div class='items'>
+<a href='https://www.facebook.com/settings?tab=mobile'><img src="mobile.png"><div id='tab'>Mobile</div></a> 
+<div class='keywords'>
+mobile
+</div>
+</div>
+
+
+<div class='items'>
+<a href="http://www.facebook.com/settings?tab=payments"><img src="payments.png"><div id='tab'> Payments</div></a>
+<div class='keywords'>
+payment, methods, balance, credits, currency, visa, card
+</div>
+</div>
+
+<div class='items'>
+<a href="http://www.facebook.com/settings?tab=ads"><img src="fbads.png"><div id='tab'> Facebook Ads</div></a>
+<div class='keywords'>
+ads, advertisement, third, party, thirdparty, socialads
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</body>
+</html>
