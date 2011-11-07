@@ -1,0 +1,102 @@
+body {
+        margin:0px auto;
+}
+
+a {
+    text-decoration:none;
+    color:black;
+}
+
+img {
+  width: 40px;
+  height: 35px;
+  vertical-align:bottom;
+  margin:8px;
+}
+
+#content {
+        margin:0px auto;
+        text-align:left;
+        padding-top:20px;
+	width: 720px;
+	background-color:black;
+}
+
+#header {
+        float:left;
+    	font-size: 30px;
+    	text-align:center;;
+        width:90%;
+        padding:5px;
+        border-bottom: 2px solid gray;
+}
+
+#description {
+	float:left;
+  	background-color:#8BB381;
+	padding:10px;
+        border-bottom: 2px solid gray;
+}
+	
+#content .searcharea {
+  float:left;
+  overflow:hidden;
+  width:100%;
+  height:70px;
+  margin-top:10px;
+  background-color:#B5EAAA;
+  border-bottom: 1px solid gray;
+}
+
+#content .searchbox {
+      float:right;
+      margin-right: 40px;
+      margin-bottom: 20px;
+      overflow:hidden;
+      margin-top:10px;
+}
+
+#content .itemsarea {
+  float:left;
+  overflow:hidden;
+  width:100%;
+  margin-top:10px;
+  background-color:#8BB381;
+  border-bottom: 1px solid gray;
+}
+
+#content .itemsline {
+    float:left;
+  overflow:hidden;
+  width:100%;
+    margin:10px;
+    border-bottom:1px inset #B5EAAA ;
+}
+
+#content .itemtitle {
+    float:left
+    width:100%
+    font-size:16px;
+    font-weight:bold;
+    text-align:left;
+    margin-left:30px;
+    margin-top:10px;
+}
+
+#content .items {
+    float:left;
+    overflow:hidden;
+    font-size:14px;
+    text-align:center;;
+    padding:10px;
+    width:90px;
+    height:80px;
+}
+
+#content .tab {
+}
+
+
+#content .keywords {
+   display:none;
+}
